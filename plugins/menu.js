@@ -36,7 +36,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let rtotalreg = Object.values(global.DATABASE._data.users).filter(user => user.registered == true).length
     let tags = {
       'main': 'Main',
-      'xp': 'Exp & Limit',
+      'xp': '5',
       'sticker': 'Sticker',
       'kerang': 'Kerang Ajaib',
       'quotes': 'Quotes',
@@ -76,8 +76,8 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
 ╭─「 ${conn.user.name} 」
-│ Hai, %name!
-│
+│ හෙලෝ, %name!
+│bot by supun෴
 │ *%exp XP*
 │ Tersisa *%limit Limit*
 │
